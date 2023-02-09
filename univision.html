@@ -1,10 +1,8 @@
 
-
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>DIRECTV SPORTS PLUS</title>
+<title>TV PUBLICA</title>
 
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Pragma" content="no-cache" />
@@ -81,7 +79,35 @@ body {
 .topnav .icon {
   display: none;
 }
-.button {
+
+.codembed {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+        .commenter {
+            float: left;
+        }
+        .commenter img {
+            width: 35px;
+            height: 35px;
+        }
+        .comment-text-area {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        .textinput {
+            float: left;
+            width: 100%;
+            min-height: 30px;
+            outline: none;
+            resize: none;
+            border: 1px solid grey;
+        } 
+        
+        .button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -92,71 +118,61 @@ body {
     font-weight: bold;
     width: 115px;
   }
-
 </style>
-<script>
 
-  window.onload = function(){
-      // your code here
-   
-
-// Define the string
-var string = 'https://megadeportestv.net/repro.html?r=Ly93aGl0ZWN1cC5jYW0vZHR2cGwyLmh0bWw/aWQ9MTA3MQ==';
-
-// Encode the String
-var encodedString = btoa(string);
-console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
-var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
-
-  var newFrameName = "hello";
-  const iframe = document.getElementById("iframe");
-  $('iframe').attr('src',source ).reload;
-
-
-};
-
-</script>
 </head>
 
 <body>
  
   <div class="contenedor">
     <div class="topnav" id="myTopnav">
- <!-- menu -->
+ <a href="index.html" class="active">Inicio</a>
+   <a href="canales.html"> Deportes </a>
+    <a href="note.html"> Canales </a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-<center><h2>Directv Sports Plus en vivo </h2></center>
+<center><h2>Univisión en VIVO </h2></center>
 
 <br>
     <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
     <div class="video-container">Loading the player...
+        <iframe allow="encrypted-media" width="100%" height="100%" src="https://v-ny.mybtv.net/live/643.m3u8" id="iframe" name="iframe" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
 
- <iframe allow="encrypted-media" src="" width="100%" height="100%" name="iframe" id="iframe" frameborder="0" scrolling="no" style="position:absolute;" allowfullscreen=""></iframe>
- </div>
+    </div>
 <br>
-<center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-SD" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" /> 
-  <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-HD" /> 
-  </center><br/>
-<script type="text/javascript">
-  function mostrarMensaje1() {
-document.getElementById("iframe").src = "https://www.tutele.nl/online.php?a=8"
-}
-function mostrarMensaje2() {
-document.getElementById("iframe").src = "//tucanaldeportivo.com/directvplushd.php"
-}
+<center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-01" />
+    <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-02" />
+     <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-03" />  
+      
+       
+    </center><br/>
+  
+  <script type="text/javascript">
+    function mostrarMensaje1() {
+  document.getElementById("iframe").src = "https://v-px.mybtv.net/live/28.m3u8"
+  
+  
+  }
+  function mostrarMensaje2() {
+  document.getElementById("iframe").src = "https://v-ny.mybtv.net/live/643.m3u8"
+  }
+  
+  
+  function mostrarMensaje3() {
+  document.getElementById("iframe").src = "https://v-la.mybtv.net/live/178.m3u8"
+  }
+  
+  
 
-function mostrarMensaje3() {
-document.getElementById("iframe").src = "https://megatelevisionhd.com/embed/repro/?r="+btoa("https://megadeportestv.net/repro.html?r=Ly93aGl0ZWN1cC5jYW0vZHR2cGwyLmh0bWw/aWQ9MTA3MQ==")
-}
+  
+  
+  
+  </script>
 
-</script>
-
-<center>-</center>
 </div>
 <script>
 function myFunction() {

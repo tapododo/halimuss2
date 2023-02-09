@@ -1,10 +1,8 @@
 
-
-
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>DIRECTV SPORTS PLUS</title>
+<title>WIN SPORTS MAS HD</title>
 
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="Pragma" content="no-cache" />
@@ -81,7 +79,34 @@ body {
 .topnav .icon {
   display: none;
 }
-.button {
+
+.codembed {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+        .commenter {
+            float: left;
+        }
+        .commenter img {
+            width: 35px;
+            height: 35px;
+        }
+        .comment-text-area {
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+
+        .textinput {
+            float: left;
+            width: 100%;
+            min-height: 30px;
+            outline: none;
+            resize: none;
+            border: 1px solid grey;
+        }
+        .button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -101,7 +126,7 @@ body {
    
 
 // Define the string
-var string = 'https://megadeportestv.net/repro.html?r=Ly93aGl0ZWN1cC5jYW0vZHR2cGwyLmh0bWw/aWQ9MTA3MQ==';
+var string = 'https://neyernot.cam/gg50.html?get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=';
 
 // Encode the String
 var encodedString = btoa(string);
@@ -122,41 +147,45 @@ var source = "https://megatelevisionhd.com/embed/repro/?r="+encodedString;
  
   <div class="contenedor">
     <div class="topnav" id="myTopnav">
- <!-- menu -->
+ <a href="index.html" class="active">Inicio</a>
+   <a href="canales.html"> Deportes </a>
+    <a href="note.html"> Canales </a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-<center><h2>Directv Sports Plus en vivo </h2></center>
-
+<center><h2>Win sports + en vivo </h2></center>
 <br>
     <input class="button" onclick="toggleFullscreen()" type="button" value="Fullscreen TV" />
 <br>
 <br>
     <div class="video-container">Loading the player...
+<iframe id="iframe" class="embed-responsive-item" allow="encrypted-media" frameborder="0" height="100%" width="100%" allowfullscreen="" scrolling="no" allowtransparency="" src="" name="iframe"></iframe>
 
- <iframe allow="encrypted-media" src="" width="100%" height="100%" name="iframe" id="iframe" frameborder="0" scrolling="no" style="position:absolute;" allowfullscreen=""></iframe>
  </div>
 <br>
-<center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-SD" />
-  <input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" /> 
-  <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-HD" /> 
+<center><input class="button" onclick="mostrarMensaje1()" type="button" value="OP-HD" />
+  <input class="button" onclick="mostrarMensaje3()" type="button" value="OP-SD" /> 
+
+
+  
+
   </center><br/>
 <script type="text/javascript">
   function mostrarMensaje1() {
-document.getElementById("iframe").src = "https://www.tutele.nl/online.php?a=8"
-}
-function mostrarMensaje2() {
-document.getElementById("iframe").src = "//tucanaldeportivo.com/directvplushd.php"
+document.getElementById("iframe").src = "https://megatelevisionhd.com/embed/repro/?r="+btoa("https://neyernot.cam/gg50.html?get=Ly9kdHZvdHQtYWthd3MuYWthbWFpemVkLm5ldC9saXZlXzEyNTEvREFTSC9tYW5pZmVzdC5tcGQ=&key=MzRkNjJiMjJlZmM2M2Y2NTllYWM1YmE4MjI4OTg4MmQ=&key2=Njk2ZGU3YTgyMjU3ZGRiNTFlZDNmZGVjMDRiNmVjOGI=")
 }
 
+
 function mostrarMensaje3() {
-document.getElementById("iframe").src = "https://megatelevisionhd.com/embed/repro/?r="+btoa("https://megadeportestv.net/repro.html?r=Ly93aGl0ZWN1cC5jYW0vZHR2cGwyLmh0bWw/aWQ9MTA3MQ==")
+document.getElementById("iframe").src ="https://www.tutele.nl/online.php?a=3305" 
 }
+
+
+
 
 </script>
 
-<center>-</center>
 </div>
 <script>
 function myFunction() {
