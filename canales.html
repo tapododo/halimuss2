@@ -948,6 +948,15 @@ function myFunction() {
     document.exitFullscreen();
   }
 }</script>
-
+<script>
+    window.onload = function() {
+        var images = document.getElementsByTagName('img');
+        for (var i = 0; i < images.length; i++) {
+            images[i].onclick = function() {
+                AndroidInterface.onImageClick();
+            };
+        }
+    };
+</script>
 
 </body></html>
